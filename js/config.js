@@ -33,6 +33,15 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
         .state('index.comerciante', {
             url: "/comerciante",
             templateUrl: "views/comerciantes/agregar.html",
+         })
+
+        .state('login',{
+            url: "/login",
+            templateUrl: "views/login/login.html",
+
+      
+        })
+
             /*data: { pageTitle: 'Lightbox Gallery' }
             resolve: {
                 loadPlugin: function ($ocLazyLoad) {
@@ -44,7 +53,7 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
                 }
             }*/
 
-        })
+       
 
         /* RUTAS DE PAGOS */
         .state('index.pagos', {
